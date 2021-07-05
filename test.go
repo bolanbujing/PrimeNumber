@@ -23,7 +23,7 @@ func Processor(seq chan int, wait chan struct{}) {
 }
 func main() {
 	orgin, wait := make(chan int), make(chan struct{})
-	//
+	//hello github
 	Processor(orgin, wait)
 	for num := 2; num < 10000; num++ {
 		orgin <- num
